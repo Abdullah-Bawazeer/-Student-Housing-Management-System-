@@ -1,0 +1,16 @@
+# تجاهل مجلد Visual Studio
+.vs/
+
+# تجاهل الملفات الناتجة من البناء
+*.exe
+*.dll
+*.pdb
+bin/
+obj/
+
+# تجاهل حزمة NuGet
+packages/
+
+# ملفات إعدادات المستخدم
+*.user
+*.suo
