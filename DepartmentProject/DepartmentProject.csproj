@@ -99,58 +99,58 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UCStatistics.cs">
+    <Compile Include="UserCntrols\UCStatistics.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCStatistics.Designer.cs">
+    <Compile Include="UserCntrols\UCStatistics.Designer.cs">
       <DependentUpon>UCStatistics.cs</DependentUpon>
     </Compile>
-    <Compile Include="StudentMangementTC.cs">
+    <Compile Include="UserCntrols\StudentMangementTC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="StudentMangementTC.Designer.cs">
+    <Compile Include="UserCntrols\StudentMangementTC.Designer.cs">
       <DependentUpon>StudentMangementTC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCStudentPayment.cs">
+    <Compile Include="UserCntrols\UCStudentPayment.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCStudentPayment.Designer.cs">
+    <Compile Include="UserCntrols\UCStudentPayment.Designer.cs">
       <DependentUpon>UCStudentPayment.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC-UsersMangement.cs">
+    <Compile Include="UserCntrols\UC-UsersMangement.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC-UsersMangement.Designer.cs">
+    <Compile Include="UserCntrols\UC-UsersMangement.Designer.cs">
       <DependentUpon>UC-UsersMangement.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCAboutProgrammer.cs">
+    <Compile Include="UserCntrols\UCAboutProgrammer.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCAboutProgrammer.Designer.cs">
+    <Compile Include="UserCntrols\UCAboutProgrammer.Designer.cs">
       <DependentUpon>UCAboutProgrammer.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCAllStudentViolations.cs">
+    <Compile Include="UserCntrols\UCAllStudentViolations.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCAllStudentViolations.Designer.cs">
+    <Compile Include="UserCntrols\UCAllStudentViolations.Designer.cs">
       <DependentUpon>UCAllStudentViolations.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCExpensesManagement.cs">
+    <Compile Include="UserCntrols\UCExpensesManagement.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCExpensesManagement.Designer.cs">
+    <Compile Include="UserCntrols\UCExpensesManagement.Designer.cs">
       <DependentUpon>UCExpensesManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCViolationsMangement.cs">
+    <Compile Include="UserCntrols\UCViolationsMangement.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCViolationsMangement.Designer.cs">
+    <Compile Include="UserCntrols\UCViolationsMangement.Designer.cs">
       <DependentUpon>UCViolationsMangement.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCYearlyReprot.cs">
+    <Compile Include="UserCntrols\UCYearlyReprot.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCYearlyReprot.Designer.cs">
+    <Compile Include="UserCntrols\UCYearlyReprot.Designer.cs">
       <DependentUpon>UCYearlyReprot.cs</DependentUpon>
     </Compile>
     <Compile Include="UpdateUser.cs">
@@ -190,31 +190,31 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UCStatistics.resx">
+    <EmbeddedResource Include="UserCntrols\UCStatistics.resx">
       <DependentUpon>UCStatistics.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StudentMangementTC.resx">
+    <EmbeddedResource Include="UserCntrols\StudentMangementTC.resx">
       <DependentUpon>StudentMangementTC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCStudentPayment.resx">
+    <EmbeddedResource Include="UserCntrols\UCStudentPayment.resx">
       <DependentUpon>UCStudentPayment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC-UsersMangement.resx">
+    <EmbeddedResource Include="UserCntrols\UC-UsersMangement.resx">
       <DependentUpon>UC-UsersMangement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCAboutProgrammer.resx">
+    <EmbeddedResource Include="UserCntrols\UCAboutProgrammer.resx">
       <DependentUpon>UCAboutProgrammer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCAllStudentViolations.resx">
+    <EmbeddedResource Include="UserCntrols\UCAllStudentViolations.resx">
       <DependentUpon>UCAllStudentViolations.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCExpensesManagement.resx">
+    <EmbeddedResource Include="UserCntrols\UCExpensesManagement.resx">
       <DependentUpon>UCExpensesManagement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCViolationsMangement.resx">
+    <EmbeddedResource Include="UserCntrols\UCViolationsMangement.resx">
       <DependentUpon>UCViolationsMangement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCYearlyReprot.resx">
+    <EmbeddedResource Include="UserCntrols\UCYearlyReprot.resx">
       <DependentUpon>UCYearlyReprot.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateUser.resx">
