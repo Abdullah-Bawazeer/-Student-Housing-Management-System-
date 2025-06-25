@@ -46,7 +46,7 @@
 
 | الشاشة | الوصف |
 |--------|--------|
-| ![تسجيل الدخول](screenshots/login.png) | شاشة الدخول للنظام |
+| ![تسجيل الدخول](screenshots/Login.png) | شاشة الدخول للنظام |
 | ![ الواجهة الرئيسية](screenshots/MainInterface.png) | شاشة  الرئيسية |
 | ![الطلاب](screenshots/StudentManagement.png) | عرض وإدارة بيانات الطلاب |
 | ![المستخدمين](screenshots/UserManagment.png) | إدارة حسابات المستخدمين |
