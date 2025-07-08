@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.Sql;
 using System.Data.SqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace DepartmentDataAccessLayer
 {
     public class clsUserData
     {
-        public static bool FindUserByUserNameAndPassword(string userName, string password)
+        public static bool IsFindUserUser(string userName, string password)
         {
             bool IsFound = false;
             SqlConnection connection = new SqlConnection(clsDataAccessSetting.ConnectionString);
@@ -40,6 +41,46 @@ namespace DepartmentDataAccessLayer
                 IsFound = false;
                 Console.WriteLine("error " + ex.Message);
                 
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return IsFound;
+        }
+
+        public static bool FindUserByUserNameAndPassword(string userName, string password,ref int Permmions ,ref int ID)
+        {
+            bool IsFound = false;
+            SqlConnection connection = new SqlConnection(clsDataAccessSetting.ConnectionString);
+            string Query = "Select* from Users where UserName=@UserName and Password =@Password";
+            SqlCommand command = new SqlCommand(Query, connection);
+            command.Parameters.AddWithValue("@UserName", userName);
+            command.Parameters.AddWithValue("@Password", password);
+
+            try
+            {
+                connection.Open();
+                SqlDataReader readr = command.ExecuteReader();
+                if (readr.Read())
+                {
+                   
+                    ID = (int)readr["ID"];
+                    Permmions = (int)readr["Permmions"];
+                    IsFound = true;
+                }
+                else
+                {
+                    IsFound = false;
+                }
+                readr.Close();
+
+            }
+            catch (Exception ex)
+            {
+                IsFound = false;
+                Console.WriteLine("error " + ex.Message);
+
             }
             finally
             {

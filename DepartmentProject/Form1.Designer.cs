@@ -75,6 +75,7 @@
             this.btnSyudentPayment.BorderColor = System.Drawing.Color.White;
             this.btnSyudentPayment.BorderRadius = 20;
             this.btnSyudentPayment.BorderThickness = 2;
+            this.btnSyudentPayment.Enabled = false;
             this.btnSyudentPayment.FillColor = System.Drawing.Color.Transparent;
             this.btnSyudentPayment.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnSyudentPayment.ForeColor = System.Drawing.Color.White;
@@ -149,6 +150,7 @@
             this.btnUsersMangement.BorderColor = System.Drawing.Color.White;
             this.btnUsersMangement.BorderRadius = 20;
             this.btnUsersMangement.BorderThickness = 2;
+            this.btnUsersMangement.Enabled = false;
             this.btnUsersMangement.FillColor = System.Drawing.Color.Transparent;
             this.btnUsersMangement.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUsersMangement.ForeColor = System.Drawing.Color.White;
@@ -174,6 +176,7 @@
             this.btmEmpMangement.BorderColor = System.Drawing.Color.White;
             this.btmEmpMangement.BorderRadius = 20;
             this.btmEmpMangement.BorderThickness = 2;
+            this.btmEmpMangement.Enabled = false;
             this.btmEmpMangement.FillColor = System.Drawing.Color.Transparent;
             this.btmEmpMangement.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btmEmpMangement.ForeColor = System.Drawing.Color.White;
@@ -198,6 +201,7 @@
             this.btnViolationMangement.BorderColor = System.Drawing.Color.White;
             this.btnViolationMangement.BorderRadius = 20;
             this.btnViolationMangement.BorderThickness = 2;
+            this.btnViolationMangement.Enabled = false;
             this.btnViolationMangement.FillColor = System.Drawing.Color.Transparent;
             this.btnViolationMangement.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViolationMangement.ForeColor = System.Drawing.Color.White;
@@ -223,6 +227,7 @@
             this.btnExpensesMangement.BorderColor = System.Drawing.Color.White;
             this.btnExpensesMangement.BorderRadius = 20;
             this.btnExpensesMangement.BorderThickness = 2;
+            this.btnExpensesMangement.Enabled = false;
             this.btnExpensesMangement.FillColor = System.Drawing.Color.Transparent;
             this.btnExpensesMangement.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExpensesMangement.ForeColor = System.Drawing.Color.White;
@@ -248,6 +253,7 @@
             this.btnActivtiesMangement.BorderColor = System.Drawing.Color.White;
             this.btnActivtiesMangement.BorderRadius = 20;
             this.btnActivtiesMangement.BorderThickness = 2;
+            this.btnActivtiesMangement.Enabled = false;
             this.btnActivtiesMangement.FillColor = System.Drawing.Color.Transparent;
             this.btnActivtiesMangement.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActivtiesMangement.ForeColor = System.Drawing.Color.White;
@@ -273,6 +279,7 @@
             this.btnStudentMangement.BorderColor = System.Drawing.Color.White;
             this.btnStudentMangement.BorderRadius = 20;
             this.btnStudentMangement.BorderThickness = 2;
+            this.btnStudentMangement.Enabled = false;
             this.btnStudentMangement.FillColor = System.Drawing.Color.Transparent;
             this.btnStudentMangement.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStudentMangement.ForeColor = System.Drawing.Color.White;

@@ -37,6 +37,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.chkbPaymentManag = new System.Windows.Forms.CheckBox();
             this.chkbActivitesMang = new System.Windows.Forms.CheckBox();
             this.chkbViolationsMang = new System.Windows.Forms.CheckBox();
             this.chkbExpensesMang = new System.Windows.Forms.CheckBox();
@@ -87,7 +88,8 @@
             this.txtNewPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtNewPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtNewPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNewPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNewPassword.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNewPassword.ForeColor = System.Drawing.Color.Black;
             this.txtNewPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNewPassword.Location = new System.Drawing.Point(323, 352);
             this.txtNewPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -121,7 +123,8 @@
             this.txtNewUserName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtNewUserName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtNewUserName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNewUserName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNewUserName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNewUserName.ForeColor = System.Drawing.Color.Black;
             this.txtNewUserName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNewUserName.Location = new System.Drawing.Point(323, 201);
             this.txtNewUserName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -193,6 +196,7 @@
             // 
             this.guna2GroupBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
             this.guna2GroupBox1.BorderRadius = 40;
+            this.guna2GroupBox1.Controls.Add(this.chkbPaymentManag);
             this.guna2GroupBox1.Controls.Add(this.chkbActivitesMang);
             this.guna2GroupBox1.Controls.Add(this.chkbViolationsMang);
             this.guna2GroupBox1.Controls.Add(this.chkbExpensesMang);
@@ -203,9 +207,22 @@
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.White;
             this.guna2GroupBox1.Location = new System.Drawing.Point(28, 92);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.Size = new System.Drawing.Size(263, 348);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(263, 375);
             this.guna2GroupBox1.TabIndex = 4;
             this.guna2GroupBox1.Text = "الصلاحيات في النظام";
+            // 
+            // chkbPaymentManag
+            // 
+            this.chkbPaymentManag.AutoSize = true;
+            this.chkbPaymentManag.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkbPaymentManag.ForeColor = System.Drawing.Color.Black;
+            this.chkbPaymentManag.Location = new System.Drawing.Point(35, 313);
+            this.chkbPaymentManag.Name = "chkbPaymentManag";
+            this.chkbPaymentManag.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.chkbPaymentManag.Size = new System.Drawing.Size(193, 35);
+            this.chkbPaymentManag.TabIndex = 10;
+            this.chkbPaymentManag.Text = "ادارة المصروفات";
+            this.chkbPaymentManag.UseVisualStyleBackColor = true;
             // 
             // chkbActivitesMang
             // 
@@ -284,7 +301,8 @@
             this.txtCurrentPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCurrentPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCurrentPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCurrentPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCurrentPassword.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCurrentPassword.ForeColor = System.Drawing.Color.Black;
             this.txtCurrentPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCurrentPassword.Location = new System.Drawing.Point(323, 282);
             this.txtCurrentPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -318,7 +336,8 @@
             this.txtCurrentUserName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCurrentUserName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCurrentUserName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCurrentUserName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCurrentUserName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCurrentUserName.ForeColor = System.Drawing.Color.Black;
             this.txtCurrentUserName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCurrentUserName.Location = new System.Drawing.Point(323, 130);
             this.txtCurrentUserName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -383,5 +402,6 @@
         private System.Windows.Forms.CheckBox chkbExpensesMang;
         private System.Windows.Forms.CheckBox chkbUsersMang;
         private System.Windows.Forms.CheckBox chkbStudentMang;
+        private System.Windows.Forms.CheckBox chkbPaymentManag;
     }
 }

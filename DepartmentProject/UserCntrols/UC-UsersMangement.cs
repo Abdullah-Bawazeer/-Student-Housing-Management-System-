@@ -46,15 +46,17 @@ namespace DepartmentProject
             dgvUsersInfo.Columns["ExpensesMangement"].HeaderText = "ادارة المصروفات";
             dgvUsersInfo.Columns["ActivitiesMangement"].HeaderText = "ادارة الخالفات";
             dgvUsersInfo.Columns["VioltionsMangement"].HeaderText = "ادارة الانشطة";
+            dgvUsersInfo.Columns["PaymentMangement"].HeaderText = "ادارة الدفوعات";
 
             dgvUsersInfo.Columns[0].Width = 60;
-            dgvUsersInfo.Columns[1].Width = 180;
-            dgvUsersInfo.Columns[2].Width = 175;
+            dgvUsersInfo.Columns[1].Width = 140;
+            dgvUsersInfo.Columns[2].Width = 135;
             dgvUsersInfo.Columns[3].Width = 120;
-            dgvUsersInfo.Columns[4].Width = 110;
-            dgvUsersInfo.Columns[5].Width = 110;
-            dgvUsersInfo.Columns[6].Width = 110;
-            dgvUsersInfo.Columns[6].Width = 120;
+            dgvUsersInfo.Columns[4].Width = 100;
+            dgvUsersInfo.Columns[5].Width = 100;
+            dgvUsersInfo.Columns[6].Width = 100;
+            dgvUsersInfo.Columns[7].Width = 100;
+            dgvUsersInfo.Columns[8].Width = 100;
 
         }
 

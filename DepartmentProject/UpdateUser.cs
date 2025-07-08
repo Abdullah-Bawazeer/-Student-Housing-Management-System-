@@ -53,6 +53,10 @@ namespace DepartmentProject
                 {
                     chkbViolationsMang.Checked = true;
                 }
+                if ((_User.Permmions & 32) == 32)
+                {
+                    chkbPaymentManag.Checked = true;
+                }
             }
             else
             {
@@ -88,6 +92,10 @@ namespace DepartmentProject
             if (chkbViolationsMang.Checked)
             {
                 Permistions += 16;
+            }
+            if (chkbPaymentManag.Checked)
+            {
+                Permistions += 32;
             }
             _User.Permmions = Permistions;
             if (_User.Save())

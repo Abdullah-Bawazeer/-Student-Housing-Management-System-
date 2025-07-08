@@ -26,18 +26,31 @@ namespace DepartmentBusinessLayer
             Mode = eMode.eAdd;
         }
 
-        public clsUser(string UserName , string Password , int Permmions)
+        public clsUser(int ID ,string UserName , string Password , int Permmions)
         {
+            this.Id = ID;   
             this.UserName =UserName;
             this.Password = Password;
             this.Permmions = Permmions;
             Mode = eMode.eUpdate;
         }
 
-        public static bool FindUserByUserNameAndPassword(string userName, string password)
+        public static bool IsFindUser(string userName, string password)
         {
-            return clsUserData.FindUserByUserNameAndPassword(userName, password);
+            return clsUserData.IsFindUserUser(userName, password);
         }
+
+        public static clsUser FindUserByUserNameAndPassword(string userName, string password)
+        {
+            int Permmions = 0;int ID = 0;
+            bool IsFound = clsUserData.FindUserByUserNameAndPassword(userName, password ,ref Permmions , ref ID);
+            if (IsFound)
+            {
+                return new clsUser(ID ,userName,password ,Permmions);
+            }
+            return null;
+        }
+
 
         public static clsUser FindUserByID(int ID)
         {
@@ -45,7 +58,7 @@ namespace DepartmentBusinessLayer
             int Permmions = 0;
             if(clsUserData.FindUserByID(ID ,ref UserName, ref Password ,ref Permmions))
             {
-                return new clsUser(UserName , Password , Permmions);
+                return new clsUser(ID, UserName , Password , Permmions);
             }
             return null;
         }
@@ -63,10 +76,11 @@ namespace DepartmentBusinessLayer
             DtNew.Columns.Add("ExpensesMangement", typeof(bool));
             DtNew.Columns.Add("ActivitiesMangement", typeof(bool));
             DtNew.Columns.Add("VioltionsMangement", typeof(bool));
+            DtNew.Columns.Add("PaymentMangement", typeof(bool));
 
             int ID, Permmions;
             string UserName, Password;
-            bool StudentMangement, UsersMangement, ExpensesMangement, ActivitiesMangement, VioltionsMangement = false;
+            bool StudentMangement, UsersMangement, ExpensesMangement, ActivitiesMangement, VioltionsMangement ,PaymentMangement = false;
 
             DataTable dt = new DataTable();
             dt = clsUserData.GetAllUsers();
@@ -121,7 +135,17 @@ namespace DepartmentBusinessLayer
                 {
                     VioltionsMangement = false;
                 }
-                DtNew.Rows.Add(ID, UserName, Password, StudentMangement, UsersMangement, ExpensesMangement, ActivitiesMangement, VioltionsMangement);
+                //////////////////////
+                if ((Permmions & 32) == 32)
+                {
+                    PaymentMangement = true;
+                }
+                else
+                {
+                    PaymentMangement = false;
+                }
+
+                DtNew.Rows.Add(ID, UserName, Password, StudentMangement, UsersMangement, ExpensesMangement, ActivitiesMangement, VioltionsMangement,PaymentMangement);
             }
             return DtNew;
         }

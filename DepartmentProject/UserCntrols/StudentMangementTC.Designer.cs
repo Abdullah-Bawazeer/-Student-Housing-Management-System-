@@ -50,7 +50,7 @@
             this.btnDeleteStudent = new Guna.UI2.WinForms.Guna2Button();
             this.btnShowStudentInfo = new Guna.UI2.WinForms.Guna2Button();
             this.txtSearchData = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnExpertToBDF = new Guna.UI2.WinForms.Guna2Button();
             this.btnRefreash = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddStudent = new Guna.UI2.WinForms.Guna2Button();
@@ -315,24 +315,25 @@
             this.txtSearchData.TabIndex = 24;
             this.txtSearchData.TextChanged += new System.EventHandler(this.txtSearchData_TextChanged);
             // 
-            // guna2Button5
+            // btnExpertToBDF
             // 
-            this.guna2Button5.BackColor = System.Drawing.Color.White;
-            this.guna2Button5.BorderRadius = 15;
-            this.guna2Button5.BorderThickness = 2;
-            this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(60)))), ((int)(((byte)(90)))));
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
-            this.guna2Button5.HoverState.FillColor = System.Drawing.Color.White;
-            this.guna2Button5.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button5.Image = global::DepartmentProject.Properties.Resources.file_content_10x;
-            this.guna2Button5.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button5.Location = new System.Drawing.Point(32, 828);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(291, 53);
-            this.guna2Button5.TabIndex = 20;
-            this.guna2Button5.Text = "طباعة تقرير";
+            this.btnExpertToBDF.BackColor = System.Drawing.Color.White;
+            this.btnExpertToBDF.BorderRadius = 15;
+            this.btnExpertToBDF.BorderThickness = 2;
+            this.btnExpertToBDF.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(60)))), ((int)(((byte)(90)))));
+            this.btnExpertToBDF.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExpertToBDF.ForeColor = System.Drawing.Color.White;
+            this.btnExpertToBDF.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
+            this.btnExpertToBDF.HoverState.FillColor = System.Drawing.Color.White;
+            this.btnExpertToBDF.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.btnExpertToBDF.Image = global::DepartmentProject.Properties.Resources.file_content_10x;
+            this.btnExpertToBDF.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnExpertToBDF.Location = new System.Drawing.Point(32, 828);
+            this.btnExpertToBDF.Name = "btnExpertToBDF";
+            this.btnExpertToBDF.Size = new System.Drawing.Size(291, 53);
+            this.btnExpertToBDF.TabIndex = 20;
+            this.btnExpertToBDF.Text = "طباعة تقرير";
+            this.btnExpertToBDF.Click += new System.EventHandler(this.btnExpertToBDF_Click);
             // 
             // btnRefreash
             // 
@@ -442,7 +443,7 @@
             this.Controls.Add(this.txtSearchData);
             this.Controls.Add(this.btnShowStudentInfo);
             this.Controls.Add(this.btnDeleteStudent);
-            this.Controls.Add(this.guna2Button5);
+            this.Controls.Add(this.btnExpertToBDF);
             this.Controls.Add(this.btnUpadetStudentInfo);
             this.Controls.Add(this.cmbTimePeriod);
             this.Controls.Add(this.guna2Panel5);
@@ -495,7 +496,7 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2Button btnUpadetStudentInfo;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
+        private Guna.UI2.WinForms.Guna2Button btnExpertToBDF;
         private Guna.UI2.WinForms.Guna2Button btnDeleteStudent;
         private Guna.UI2.WinForms.Guna2Button btnShowStudentInfo;
         private Guna.UI2.WinForms.Guna2TextBox txtSearchData;

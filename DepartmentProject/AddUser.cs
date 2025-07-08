@@ -35,7 +35,7 @@ namespace DepartmentProject
             _User = new clsUser();
             int Permistions = 0;
 
-                if (clsUser.FindUserByUserNameAndPassword(txtUserName.Text, txtPassword.Text))
+                if (clsUser.IsFindUser(txtUserName.Text, txtPassword.Text))
                 {
                     MessageBox.Show("This UserName And Password Exist in System !", "Waring", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
@@ -62,6 +62,10 @@ namespace DepartmentProject
                     if (chkbViolationsMang.Checked)
                     {
                         Permistions += 16;
+                    }
+                    if (chkPaymentManag.Checked)
+                    {
+                        Permistions += 32;
                     }
                     _User.Permmions = Permistions;
                     if (_User.Save())

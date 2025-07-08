@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnLogin = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -37,7 +38,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txtUserName = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.chkbRemmberMe = new Guna.UI2.WinForms.Guna2CheckBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -54,6 +55,23 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(449, 633);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // guna2GradientPanel2
+            // 
+            this.guna2GradientPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel2.BorderColor = System.Drawing.Color.White;
+            this.guna2GradientPanel2.BorderRadius = 60;
+            this.guna2GradientPanel2.BorderThickness = 2;
+            this.guna2GradientPanel2.CustomizableEdges.BottomLeft = false;
+            this.guna2GradientPanel2.CustomizableEdges.TopLeft = false;
+            this.guna2GradientPanel2.CustomizableEdges.TopRight = false;
+            this.guna2GradientPanel2.FillColor = System.Drawing.Color.DarkRed;
+            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.DarkRed;
+            this.guna2GradientPanel2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(-10, -31);
+            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(106, 96);
+            this.guna2GradientPanel2.TabIndex = 49;
             // 
             // pictureBox1
             // 
@@ -98,9 +116,9 @@
             this.btnLogin.BorderThickness = 2;
             this.btnLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnLogin.FillColor2 = System.Drawing.Color.White;
-            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(645, 458);
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.Black;
+            this.btnLogin.Location = new System.Drawing.Point(631, 497);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(211, 55);
@@ -168,7 +186,10 @@
             // 
             // guna2GradientPanel1
             // 
+            this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel1.BorderColor = System.Drawing.Color.SteelBlue;
             this.guna2GradientPanel1.BorderRadius = 60;
+            this.guna2GradientPanel1.BorderThickness = 2;
             this.guna2GradientPanel1.CustomizableEdges.BottomRight = false;
             this.guna2GradientPanel1.CustomizableEdges.TopRight = false;
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.DarkRed;
@@ -179,19 +200,23 @@
             this.guna2GradientPanel1.Size = new System.Drawing.Size(128, 108);
             this.guna2GradientPanel1.TabIndex = 48;
             // 
-            // guna2GradientPanel2
+            // chkbRemmberMe
             // 
-            this.guna2GradientPanel2.BorderRadius = 60;
-            this.guna2GradientPanel2.CustomizableEdges.BottomLeft = false;
-            this.guna2GradientPanel2.CustomizableEdges.TopLeft = false;
-            this.guna2GradientPanel2.CustomizableEdges.TopRight = false;
-            this.guna2GradientPanel2.FillColor = System.Drawing.Color.DarkRed;
-            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.DarkRed;
-            this.guna2GradientPanel2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(-10, -31);
-            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(106, 98);
-            this.guna2GradientPanel2.TabIndex = 49;
+            this.chkbRemmberMe.AutoSize = true;
+            this.chkbRemmberMe.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chkbRemmberMe.CheckedState.BorderRadius = 0;
+            this.chkbRemmberMe.CheckedState.BorderThickness = 0;
+            this.chkbRemmberMe.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chkbRemmberMe.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkbRemmberMe.Location = new System.Drawing.Point(604, 437);
+            this.chkbRemmberMe.Name = "chkbRemmberMe";
+            this.chkbRemmberMe.Size = new System.Drawing.Size(199, 33);
+            this.chkbRemmberMe.TabIndex = 49;
+            this.chkbRemmberMe.Text = "Remmber Me.";
+            this.chkbRemmberMe.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chkbRemmberMe.UncheckedState.BorderRadius = 0;
+            this.chkbRemmberMe.UncheckedState.BorderThickness = 0;
+            this.chkbRemmberMe.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             // 
             // Login
             // 
@@ -199,6 +224,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1020, 633);
+            this.Controls.Add(this.chkbRemmberMe);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label2);
@@ -234,5 +260,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
+        private Guna.UI2.WinForms.Guna2CheckBox chkbRemmberMe;
     }
 }

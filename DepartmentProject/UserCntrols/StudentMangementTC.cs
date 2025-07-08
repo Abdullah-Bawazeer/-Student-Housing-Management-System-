@@ -1,14 +1,20 @@
 ﻿using DepartmentBusinessLayer;
+using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Xml.Linq;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using Document = iTextSharp.text.Document;
 namespace DepartmentProject
 {
     public partial class StudentMangementTC : UserControl
@@ -131,7 +137,6 @@ namespace DepartmentProject
                 dt = clsStudent.GetDataGridStudentInfo(Filte);
                 
                 dgvShowStudentInfo.DataSource = dt;
-                //ChangeDataGridViewSrudentHeader();
                
                
             }
@@ -189,8 +194,8 @@ namespace DepartmentProject
            
             DataTable dt = new DataTable();
             dt = clsStudent.GetDataGridStudentInfo(Filter);
-
             dgvShowStudentInfo.DataSource = dt;
+           // ChangeDataGridViewSrudentHeader();
         }
 
         private void cmbUniversity_SelectedIndexChanged(object sender, EventArgs e)
@@ -216,6 +221,59 @@ namespace DepartmentProject
         private void cmbStudent_SelectedIndexChanged(object sender, EventArgs e)
         {
             FilterDataUseingComboBox();
+        }
+
+        private void btnExpertToBDF_Click(object sender, EventArgs e)
+        {
+            //// تحديد مكان الحفظ
+            //SaveFileDialog saveFileDialog = new SaveFileDialog();
+            //saveFileDialog.Filter = "PDF files (*.pdf)|*.pdf";
+            //saveFileDialog.Title = "حفظ ملف PDF";
+            //saveFileDialog.FileName = "data.pdf";
+
+            //if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            //{
+            //    try
+            //    {
+            //        // إنشاء مستند PDF
+            //        Document document = new Document(PageSize.A4, 10f, 10f, 20f, 20f);
+            //        PdfWriter.GetInstance(document, new FileStream(saveFileDialog.FileName, FileMode.Create));
+            //        document.Open();
+
+            //        // إنشاء جدول PDF بنفس عدد الأعمدة
+            //        PdfPTable pdfTable = new PdfPTable(dgvShowStudentInfo.Columns.Count);
+            //        pdfTable.WidthPercentage = 100;
+
+            //        // إضافة العناوين
+            //        foreach (DataGridViewColumn column in dgvShowStudentInfo.Columns)
+            //        {
+            //            PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText));
+            //            cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+            //            pdfTable.AddCell(cell);
+            //        }
+
+            //        // إضافة الصفوف
+            //        foreach (DataGridViewRow row in dgvShowStudentInfo.Rows)
+            //        {
+            //            if (!row.IsNewRow)
+            //            {
+            //                foreach (DataGridViewCell cell in row.Cells)
+            //                {
+            //                    pdfTable.AddCell(cell.Value?.ToString() ?? "");
+            //                }
+            //            }
+            //        }
+
+            //        document.Add(pdfTable);
+            //        document.Close();
+
+            //        MessageBox.Show("تم حفظ البيانات في ملف PDF بنجاح.", "تم", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        MessageBox.Show("حدث خطأ أثناء التصدير: " + ex.Message);
+            //    }
+            //}
         }
     }
 

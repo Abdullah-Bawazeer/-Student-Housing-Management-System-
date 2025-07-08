@@ -64,7 +64,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(672, 183);
+            this.label1.Location = new System.Drawing.Point(685, 200);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(134, 29);
             this.label1.TabIndex = 37;
@@ -150,8 +150,8 @@
             this.pictureBox1.Image = global::DepartmentProject.Properties.Resources.Security_on_Customizable_Isometric_Illustrations___Amico_Style;
             this.pictureBox1.Location = new System.Drawing.Point(595, 18);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(268, 142);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.Size = new System.Drawing.Size(343, 170);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 36;
             this.pictureBox1.TabStop = false;
             // 

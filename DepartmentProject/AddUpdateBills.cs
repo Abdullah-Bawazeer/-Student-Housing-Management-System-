@@ -93,13 +93,6 @@ namespace DepartmentProject
             _Bills.BuyDate = dateTime.Value;
 
 
-            //_Bills.Name ="hi";
-            //_Bills.Price = 200;
-            //_Bills.BuyerName = "adadkajakda";
-            //_Bills.Amount = 3;
-            //_Bills.TotalPrice = 2000;//Convert.ToInt32(txtTotalPrice.Text) * Convert.ToInt32(numItem.Value);
-            //_Bills.BuyDate = DateTime.Now;
-
             if (_Bills.Save())
             {
                 MessageBox.Show("Bills added successefully", "Seccessed", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -121,17 +114,6 @@ namespace DepartmentProject
         private void txtBuyerName_TextChanged(object sender, EventArgs e)
         {
         }
-
-        //private void numItem_ValueChanged(object sender, EventArgs e)
-        //{
-        //    if(txtPrice.Text != "")
-        //    {
-        //        int num = Convert.ToInt32(numItem.Value);
-        //        decimal price = Convert.ToDecimal(txtPrice.Text.ToString());
-        //        txtTotalPrice.Text = (num * price).ToString();
-        //    }
-            
-        //}
 
         private void txtPrice_TextChanged(object sender, EventArgs e)
         {

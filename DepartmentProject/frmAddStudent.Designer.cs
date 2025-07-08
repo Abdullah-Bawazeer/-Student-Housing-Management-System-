@@ -86,7 +86,7 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(60)))), ((int)(((byte)(90)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.MaximumSize = new System.Drawing.Size(1769, 81);
             this.guna2Panel1.MinimumSize = new System.Drawing.Size(1769, 81);
             this.guna2Panel1.Name = "guna2Panel1";
@@ -157,7 +157,7 @@
             this.txtStudentName.ForeColor = System.Drawing.Color.Black;
             this.txtStudentName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtStudentName.Location = new System.Drawing.Point(1375, 146);
-            this.txtStudentName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtStudentName.Margin = new System.Windows.Forms.Padding(5);
             this.txtStudentName.Name = "txtStudentName";
             this.txtStudentName.PlaceholderText = "";
             this.txtStudentName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -182,7 +182,7 @@
             this.txtPhoneNumber.ForeColor = System.Drawing.Color.Black;
             this.txtPhoneNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPhoneNumber.Location = new System.Drawing.Point(1375, 426);
-            this.txtPhoneNumber.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtPhoneNumber.Margin = new System.Windows.Forms.Padding(5);
             this.txtPhoneNumber.Name = "txtPhoneNumber";
             this.txtPhoneNumber.PlaceholderText = "";
             this.txtPhoneNumber.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -207,7 +207,7 @@
             this.txtWhatsappNum.ForeColor = System.Drawing.Color.Black;
             this.txtWhatsappNum.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtWhatsappNum.Location = new System.Drawing.Point(1375, 560);
-            this.txtWhatsappNum.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtWhatsappNum.Margin = new System.Windows.Forms.Padding(5);
             this.txtWhatsappNum.Name = "txtWhatsappNum";
             this.txtWhatsappNum.PlaceholderText = "";
             this.txtWhatsappNum.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -232,7 +232,7 @@
             this.txtFatherName.ForeColor = System.Drawing.Color.Black;
             this.txtFatherName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtFatherName.Location = new System.Drawing.Point(988, 146);
-            this.txtFatherName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtFatherName.Margin = new System.Windows.Forms.Padding(5);
             this.txtFatherName.Name = "txtFatherName";
             this.txtFatherName.PlaceholderText = "";
             this.txtFatherName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -257,7 +257,7 @@
             this.txtFatherPhone.ForeColor = System.Drawing.Color.Black;
             this.txtFatherPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtFatherPhone.Location = new System.Drawing.Point(988, 271);
-            this.txtFatherPhone.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtFatherPhone.Margin = new System.Windows.Forms.Padding(5);
             this.txtFatherPhone.Name = "txtFatherPhone";
             this.txtFatherPhone.PlaceholderText = "";
             this.txtFatherPhone.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -282,7 +282,7 @@
             this.txtPlaceLive.ForeColor = System.Drawing.Color.Black;
             this.txtPlaceLive.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPlaceLive.Location = new System.Drawing.Point(988, 426);
-            this.txtPlaceLive.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtPlaceLive.Margin = new System.Windows.Forms.Padding(5);
             this.txtPlaceLive.Name = "txtPlaceLive";
             this.txtPlaceLive.PlaceholderText = "";
             this.txtPlaceLive.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -305,7 +305,7 @@
             this.cmbMajor.FormattingEnabled = true;
             this.cmbMajor.ItemHeight = 30;
             this.cmbMajor.Location = new System.Drawing.Point(657, 146);
-            this.cmbMajor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbMajor.Margin = new System.Windows.Forms.Padding(4);
             this.cmbMajor.Name = "cmbMajor";
             this.cmbMajor.Size = new System.Drawing.Size(264, 36);
             this.cmbMajor.TabIndex = 25;
@@ -323,7 +323,7 @@
             this.cmbUniversty.FormattingEnabled = true;
             this.cmbUniversty.ItemHeight = 30;
             this.cmbUniversty.Location = new System.Drawing.Point(657, 289);
-            this.cmbUniversty.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbUniversty.Margin = new System.Windows.Forms.Padding(4);
             this.cmbUniversty.Name = "cmbUniversty";
             this.cmbUniversty.Size = new System.Drawing.Size(264, 36);
             this.cmbUniversty.TabIndex = 26;
@@ -341,7 +341,7 @@
             this.cmbLevel.FormattingEnabled = true;
             this.cmbLevel.ItemHeight = 30;
             this.cmbLevel.Location = new System.Drawing.Point(657, 426);
-            this.cmbLevel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbLevel.Margin = new System.Windows.Forms.Padding(4);
             this.cmbLevel.Name = "cmbLevel";
             this.cmbLevel.Size = new System.Drawing.Size(264, 36);
             this.cmbLevel.TabIndex = 27;
@@ -359,7 +359,7 @@
             this.cmbTimePeriod.FormattingEnabled = true;
             this.cmbTimePeriod.ItemHeight = 30;
             this.cmbTimePeriod.Location = new System.Drawing.Point(657, 572);
-            this.cmbTimePeriod.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbTimePeriod.Margin = new System.Windows.Forms.Padding(4);
             this.cmbTimePeriod.Name = "cmbTimePeriod";
             this.cmbTimePeriod.Size = new System.Drawing.Size(264, 36);
             this.cmbTimePeriod.TabIndex = 28;
@@ -380,7 +380,7 @@
             "طالب",
             "خريج"});
             this.cmbStudentStatus.Location = new System.Drawing.Point(979, 572);
-            this.cmbStudentStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbStudentStatus.Margin = new System.Windows.Forms.Padding(4);
             this.cmbStudentStatus.Name = "cmbStudentStatus";
             this.cmbStudentStatus.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.cmbStudentStatus.Size = new System.Drawing.Size(305, 36);
@@ -396,7 +396,7 @@
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Location = new System.Drawing.Point(1351, 668);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(240, 55);
             this.btnSave.TabIndex = 30;
@@ -413,7 +413,7 @@
             this.btnEmptyFaild.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmptyFaild.ForeColor = System.Drawing.Color.White;
             this.btnEmptyFaild.Location = new System.Drawing.Point(951, 668);
-            this.btnEmptyFaild.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEmptyFaild.Margin = new System.Windows.Forms.Padding(4);
             this.btnEmptyFaild.Name = "btnEmptyFaild";
             this.btnEmptyFaild.Size = new System.Drawing.Size(240, 55);
             this.btnEmptyFaild.TabIndex = 31;
@@ -430,7 +430,7 @@
             this.btnEstmara.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEstmara.ForeColor = System.Drawing.Color.White;
             this.btnEstmara.Location = new System.Drawing.Point(16, 692);
-            this.btnEstmara.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEstmara.Margin = new System.Windows.Forms.Padding(4);
             this.btnEstmara.Name = "btnEstmara";
             this.btnEstmara.Size = new System.Drawing.Size(240, 59);
             this.btnEstmara.TabIndex = 32;
@@ -447,7 +447,7 @@
             this.btnGaeed.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGaeed.ForeColor = System.Drawing.Color.White;
             this.btnGaeed.Location = new System.Drawing.Point(323, 692);
-            this.btnGaeed.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGaeed.Margin = new System.Windows.Forms.Padding(4);
             this.btnGaeed.Name = "btnGaeed";
             this.btnGaeed.Size = new System.Drawing.Size(240, 59);
             this.btnGaeed.TabIndex = 33;
@@ -464,7 +464,7 @@
             this.btnLoadPictur.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoadPictur.ForeColor = System.Drawing.Color.White;
             this.btnLoadPictur.Location = new System.Drawing.Point(323, 352);
-            this.btnLoadPictur.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLoadPictur.Margin = new System.Windows.Forms.Padding(4);
             this.btnLoadPictur.Name = "btnLoadPictur";
             this.btnLoadPictur.Size = new System.Drawing.Size(240, 55);
             this.btnLoadPictur.TabIndex = 35;
@@ -481,7 +481,7 @@
             this.btnIdentity.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIdentity.ForeColor = System.Drawing.Color.White;
             this.btnIdentity.Location = new System.Drawing.Point(16, 352);
-            this.btnIdentity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIdentity.Margin = new System.Windows.Forms.Padding(4);
             this.btnIdentity.Name = "btnIdentity";
             this.btnIdentity.Size = new System.Drawing.Size(240, 55);
             this.btnIdentity.TabIndex = 34;
@@ -493,7 +493,7 @@
             this.personalPictur.BackColor = System.Drawing.Color.White;
             this.personalPictur.ImageRotate = 0F;
             this.personalPictur.Location = new System.Drawing.Point(323, 146);
-            this.personalPictur.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.personalPictur.Margin = new System.Windows.Forms.Padding(4);
             this.personalPictur.Name = "personalPictur";
             this.personalPictur.Size = new System.Drawing.Size(212, 187);
             this.personalPictur.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -505,7 +505,7 @@
             this.PcIdentityCard.BackColor = System.Drawing.Color.White;
             this.PcIdentityCard.ImageRotate = 0F;
             this.PcIdentityCard.Location = new System.Drawing.Point(32, 146);
-            this.PcIdentityCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PcIdentityCard.Margin = new System.Windows.Forms.Padding(4);
             this.PcIdentityCard.Name = "PcIdentityCard";
             this.PcIdentityCard.Size = new System.Drawing.Size(208, 187);
             this.PcIdentityCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -517,7 +517,7 @@
             this.pcEstmara.BackColor = System.Drawing.Color.White;
             this.pcEstmara.ImageRotate = 0F;
             this.pcEstmara.Location = new System.Drawing.Point(32, 496);
-            this.pcEstmara.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pcEstmara.Margin = new System.Windows.Forms.Padding(4);
             this.pcEstmara.Name = "pcEstmara";
             this.pcEstmara.Size = new System.Drawing.Size(212, 180);
             this.pcEstmara.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -529,7 +529,7 @@
             this.pcGaeed.BackColor = System.Drawing.Color.White;
             this.pcGaeed.ImageRotate = 0F;
             this.pcGaeed.Location = new System.Drawing.Point(337, 496);
-            this.pcGaeed.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pcGaeed.Margin = new System.Windows.Forms.Padding(4);
             this.pcGaeed.Name = "pcGaeed";
             this.pcGaeed.Size = new System.Drawing.Size(212, 180);
             this.pcGaeed.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -726,7 +726,7 @@
             this.StudentDate.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.StudentDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.StudentDate.Location = new System.Drawing.Point(1375, 284);
-            this.StudentDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StudentDate.Margin = new System.Windows.Forms.Padding(4);
             this.StudentDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.StudentDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.StudentDate.Name = "StudentDate";
@@ -780,7 +780,7 @@
             this.Controls.Add(this.txtStudentName);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimizeBox = false;
             this.Name = "frmAddStudent";
             this.RightToLeftLayout = true;

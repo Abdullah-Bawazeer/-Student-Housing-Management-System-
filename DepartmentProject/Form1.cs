@@ -1,4 +1,7 @@
-﻿using System;
+﻿using DepartmentBusinessLayer;
+using DepartmentProject.Global_Class;
+using Microsoft.VisualBasic.ApplicationServices;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +15,7 @@ namespace DepartmentProject
 {
     public partial class Form1 : Form
     {
+        Login _frmLogin;
         private StudentMangementTC UCstudentMangenet = new StudentMangementTC();
         private UCExpensesManagement UCExpenses = new UCExpensesManagement();
         private MainInterface UCmainInerface = new MainInterface();
@@ -22,10 +26,10 @@ namespace DepartmentProject
 
       
 
-        public Form1()
+        public Form1(Login frm)
         {
             InitializeComponent();
-           
+            this._frmLogin = frm;
         }
         
         private void Form1_Load(object sender, EventArgs e)
@@ -36,11 +40,49 @@ namespace DepartmentProject
             PnContainer.Controls.Add(UCmainInerface);
             UCmainInerface.Dock = DockStyle.Fill;
             UCmainInerface.BringToFront();
+            CheckAndSetPermmion();
+        }
+
+        private void CheckAndSetPermmion()
+        {
+            if ((CurrentUser.Permmions & 1) == 1)
+            {
+                btnStudentMangement.Enabled = true;
+            }
+            if ((CurrentUser.Permmions & 2) == 2)
+            {
+                btnUsersMangement.Enabled = true;
+            }
+            if ((CurrentUser.Permmions & 4) == 4)
+            {
+                btnExpensesMangement.Enabled = true;
+            }
+            if ((CurrentUser.Permmions & 8) == 8)
+            {
+                btnActivtiesMangement.Enabled = true;
+            }
+            if ((CurrentUser.Permmions & 16) == 16)
+            {
+                btnViolationMangement.Enabled = true;
+            }
+            if ((CurrentUser.Permmions & 32) == 32)
+            {
+                btnSyudentPayment.Enabled = true;
+            }
+            if(CurrentUser.UserName =="admin")
+            {
+                btmEmpMangement.Enabled = true;
+            }
         }
 
         private void btnExist_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            //this.Hide();
+            // Login frm = new Login();
+            // frm.ShowDialog();
+            _frmLogin.Show();
+            this.Close();
+
         }
 
         void AddUserContrilToScreen(UserControl UC)

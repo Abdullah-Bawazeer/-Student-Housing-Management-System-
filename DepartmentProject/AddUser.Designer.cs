@@ -42,6 +42,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtUserName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.chkPaymentManag = new System.Windows.Forms.CheckBox();
             this.guna2ShadowPanel1.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
@@ -117,6 +118,7 @@
             // 
             this.guna2GroupBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
             this.guna2GroupBox1.BorderRadius = 40;
+            this.guna2GroupBox1.Controls.Add(this.chkPaymentManag);
             this.guna2GroupBox1.Controls.Add(this.chkbActivitesMang);
             this.guna2GroupBox1.Controls.Add(this.chkbViolationsMang);
             this.guna2GroupBox1.Controls.Add(this.chkbExpensesMang);
@@ -128,7 +130,7 @@
             this.guna2GroupBox1.Location = new System.Drawing.Point(47, 23);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.ShadowDecoration.BorderRadius = 20;
-            this.guna2GroupBox1.Size = new System.Drawing.Size(248, 348);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(248, 368);
             this.guna2GroupBox1.TabIndex = 4;
             this.guna2GroupBox1.Text = "الصلاحيات في النظام";
             // 
@@ -265,6 +267,19 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "اسم المستخدم";
             // 
+            // chkPaymentManag
+            // 
+            this.chkPaymentManag.AutoSize = true;
+            this.chkPaymentManag.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkPaymentManag.ForeColor = System.Drawing.Color.Black;
+            this.chkPaymentManag.Location = new System.Drawing.Point(46, 318);
+            this.chkPaymentManag.Name = "chkPaymentManag";
+            this.chkPaymentManag.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.chkPaymentManag.Size = new System.Drawing.Size(176, 35);
+            this.chkPaymentManag.TabIndex = 5;
+            this.chkPaymentManag.Text = "ادارة الدفوعات";
+            this.chkPaymentManag.UseVisualStyleBackColor = true;
+            // 
             // AddUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -304,5 +319,6 @@
         private System.Windows.Forms.CheckBox chkbExpensesMang;
         private System.Windows.Forms.CheckBox chkbUsersMang;
         private System.Windows.Forms.CheckBox chkbStudentMang;
+        private System.Windows.Forms.CheckBox chkPaymentManag;
     }
 }
