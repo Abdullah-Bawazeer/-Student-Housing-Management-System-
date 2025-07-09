@@ -103,6 +103,7 @@
             this.txtPassword.Location = new System.Drawing.Point(597, 373);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txtPassword.PlaceholderText = "";
             this.txtPassword.SelectedText = "";
@@ -151,11 +152,11 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DepartmentProject.Properties.Resources._1730282098928;
-            this.pictureBox2.Location = new System.Drawing.Point(625, 26);
+            this.pictureBox2.Location = new System.Drawing.Point(594, 26);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(252, 156);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.Size = new System.Drawing.Size(296, 156);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 47;
             this.pictureBox2.TabStop = false;
             // 
@@ -189,15 +190,15 @@
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientPanel1.BorderColor = System.Drawing.Color.SteelBlue;
             this.guna2GradientPanel1.BorderRadius = 60;
-            this.guna2GradientPanel1.BorderThickness = 2;
+            this.guna2GradientPanel1.BorderThickness = 4;
             this.guna2GradientPanel1.CustomizableEdges.BottomRight = false;
             this.guna2GradientPanel1.CustomizableEdges.TopRight = false;
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.DarkRed;
             this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.DarkRed;
             this.guna2GradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(921, 575);
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(911, 571);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(128, 108);
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(128, 142);
             this.guna2GradientPanel1.TabIndex = 48;
             // 
             // chkbRemmberMe

@@ -49,10 +49,12 @@
 | ![تسجيل الدخول](screenshots/Login.png) | شاشة الدخول للنظام |
 | ![ الواجهة الرئيسية](screenshots/MainInterface.png) | شاشة  الرئيسية |
 | ![الطلاب](screenshots/StudentManagement.png) | عرض وإدارة بيانات الطلاب |
+| ![الطلاب](screenshots/AddStudent.png) |   اضافة وحذ وتديل وعرض بيانات طالب |
 | ![المستخدمين](screenshots/UserManagment.png) | إدارة حسابات المستخدمين |
 | ![ ادارة الدفوعات](screenshots/PaymentManagement.png) |   ادارة الدفوعات |
 | ![هيكل المشروع](screenshots/projectStructure.png) |   هيكل وتقسيم المشروع |
 | ![مخالفات](screenshots/ViolationManagement.png) | تقارير وإدارة مخالفات |
+| ![مخالفات](screenshots/ReportViolations.png) | احصائيات مخالفات جميع الطلاب |
 | ![عن المبرمج](screenshots/AboutProgarmmer.png) | نبذة عن المبرمج |
 | ![ادارة المصروفات](screenshots/ExpensesManagement.png) |   ادارة المصروفات |
 

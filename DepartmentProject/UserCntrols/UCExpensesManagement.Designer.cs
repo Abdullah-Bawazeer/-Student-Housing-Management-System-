@@ -36,7 +36,7 @@
             this.btnAddBills = new Guna.UI2.WinForms.Guna2Button();
             this.dgvShowExpensesInfo = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPrintPDF = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -142,22 +142,23 @@
             this.label1.TabIndex = 28;
             this.label1.Text = "ادارة المصروفات";
             // 
-            // guna2Button1
+            // btnPrintPDF
             // 
-            this.guna2Button1.BorderRadius = 15;
-            this.guna2Button1.BorderThickness = 2;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(60)))), ((int)(((byte)(90)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
-            this.guna2Button1.Location = new System.Drawing.Point(22, 727);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(292, 53);
-            this.guna2Button1.TabIndex = 29;
-            this.guna2Button1.Text = "طباعة فاتورة";
+            this.btnPrintPDF.BorderRadius = 15;
+            this.btnPrintPDF.BorderThickness = 2;
+            this.btnPrintPDF.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(60)))), ((int)(((byte)(90)))));
+            this.btnPrintPDF.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrintPDF.ForeColor = System.Drawing.Color.White;
+            this.btnPrintPDF.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
+            this.btnPrintPDF.HoverState.FillColor = System.Drawing.Color.White;
+            this.btnPrintPDF.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
+            this.btnPrintPDF.Location = new System.Drawing.Point(22, 727);
+            this.btnPrintPDF.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPrintPDF.Name = "btnPrintPDF";
+            this.btnPrintPDF.Size = new System.Drawing.Size(292, 53);
+            this.btnPrintPDF.TabIndex = 29;
+            this.btnPrintPDF.Text = "طباعة فاتورة";
+            this.btnPrintPDF.Click += new System.EventHandler(this.btnPrintPDF_Click);
             // 
             // guna2Button2
             // 
@@ -213,7 +214,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.guna2Button2);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.btnPrintPDF);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dgvShowExpensesInfo);
@@ -238,7 +239,7 @@
         private System.Windows.Forms.DataGridView dgvShowExpensesInfo;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnPrintPDF;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button btnRefresh;
     }

@@ -1,9 +1,12 @@
 ﻿using DepartmentBusinessLayer;
+using iTextSharp.text.pdf;
+using iTextSharp.text;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -59,6 +62,59 @@ namespace DepartmentProject
         private void btnBack_Click(object sender, EventArgs e)
         {
             AddUserControlToPanel.ShowUserControl(UCReport);
+        }
+
+        private void btnExpertToPDF_Click(object sender, EventArgs e)
+        {
+            // تحديد مكان الحفظ
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "PDF files (*.pdf)|*.pdf";
+            saveFileDialog.Title = "حفظ ملف PDF";
+            saveFileDialog.FileName = "data.pdf";
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    // إنشاء مستند PDF
+                    Document document = new Document(PageSize.A4, 10f, 10f, 20f, 20f);
+                    PdfWriter.GetInstance(document, new FileStream(saveFileDialog.FileName, FileMode.Create));
+                    document.Open();
+
+                    // إنشاء جدول PDF بنفس عدد الأعمدة
+                    PdfPTable pdfTable = new PdfPTable(dgvViolationsData.Columns.Count);
+                    pdfTable.WidthPercentage = 100;
+
+                    // إضافة العناوين
+                    foreach (DataGridViewColumn column in dgvViolationsData.Columns)
+                    {
+                        PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText));
+                        cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                        pdfTable.AddCell(cell);
+                    }
+
+                    // إضافة الصفوف
+                    foreach (DataGridViewRow row in dgvViolationsData.Rows)
+                    {
+                        if (!row.IsNewRow)
+                        {
+                            foreach (DataGridViewCell cell in row.Cells)
+                            {
+                                pdfTable.AddCell(cell.Value?.ToString() ?? "");
+                            }
+                        }
+                    }
+
+                    document.Add(pdfTable);
+                    document.Close();
+
+                    MessageBox.Show("تم حفظ البيانات في ملف PDF بنجاح.", "تم", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("حدث خطأ أثناء التصدير: " + ex.Message);
+                }
+            }
         }
     }
 }

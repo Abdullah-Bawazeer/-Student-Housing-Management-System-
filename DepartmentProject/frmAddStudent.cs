@@ -147,13 +147,7 @@ namespace DepartmentProject
                     {
                         cmbStudentStatus.Text = "خريج";
                     }
-                    //cmbStudentStatus.Text = _Student.Status;
-                    //cmbMajor.Text = clsStudent.GetItemNameByItemID(this.StudentID, "Majors", "Major");
-                    //cmbUniversty.Text = clsStudent.GetItemNameByItemID(this.StudentID, "Universtys", "Universty");
-                    //cmbLevel.Text = clsStudent.GetItemNameByItemID(this.StudentID, "Levels", "Level");
-                    //cmbTimePeriod.Text = clsStudent.GetItemNameByItemID(this.StudentID, "Periods", "Period");
-
-                    //cmbStudentStatus.Text = _Student.Status;
+                   
                     cmbMajor.SelectedItem = cmbMajor.Items[_Student.MajorId - 1]; //(clsStudent.GetItemNameByItemID(this.StudentID, "Majors", "Major"));
                     cmbUniversty.SelectedItem = cmbUniversty.Items[_Student.UniverstyId - 1];     //clsStudent.GetItemNameByItemID(this.StudentID, "Universtys", "Universty");
                     cmbLevel.SelectedItem = cmbLevel.Items[_Student.CurrentLevelId - 1];        //clsStudent.GetItemNameByItemID(this.StudentID, "Levels", "Level");

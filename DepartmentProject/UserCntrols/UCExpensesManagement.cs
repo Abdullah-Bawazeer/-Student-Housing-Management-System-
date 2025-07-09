@@ -9,6 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DepartmentBusinessLayer;
+using iTextSharp.text.pdf;
+using iTextSharp.text;
+using System.IO;
 
 namespace DepartmentProject
 {
@@ -87,6 +90,60 @@ namespace DepartmentProject
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             loadAllDataGridViewInfo();
+        }
+
+        private void btnPrintPDF_Click(object sender, EventArgs e)
+        {
+            // تحديد مكان الحفظ
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "PDF files (*.pdf)|*.pdf";
+            saveFileDialog.Title = "حفظ ملف PDF";
+            saveFileDialog.FileName = "data.pdf";
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    // إنشاء مستند PDF
+                    Document document = new Document(PageSize.A4, 10f, 10f, 20f, 20f);
+                    PdfWriter.GetInstance(document, new FileStream(saveFileDialog.FileName, FileMode.Create));
+                    document.Open();
+
+                    // إنشاء جدول PDF بنفس عدد الأعمدة
+                    PdfPTable pdfTable = new PdfPTable(dgvShowExpensesInfo.Columns.Count);
+                    pdfTable.WidthPercentage = 100;
+
+                    // إضافة العناوين
+                    foreach (DataGridViewColumn column in dgvShowExpensesInfo.Columns)
+                    {
+                        PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText));
+                        cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                        pdfTable.AddCell(cell);
+                    }
+
+                    // إضافة الصفوف
+                    foreach (DataGridViewRow row in dgvShowExpensesInfo.Rows)
+                    {
+                        if (!row.IsNewRow)
+                        {
+                            foreach (DataGridViewCell cell in row.Cells)
+                            {
+                                pdfTable.AddCell(cell.Value?.ToString() ?? "");
+                            }
+                        }
+                    }
+
+                    document.Add(pdfTable);
+                    document.Close();
+
+                    MessageBox.Show("تم حفظ البيانات في ملف PDF بنجاح.", "تم", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("حدث خطأ أثناء التصدير: " + ex.Message);
+                }
+            }
+        
         }
     }
 }
